@@ -1,0 +1,46 @@
+<view class='jinri'>
+    <text>{{day.date}}</text>
+    <text>{{day.week}}</text>
+    <text>{{day.wea}}</text>
+    <text>白天天气：{{day.wea_day}}</text>
+    <text>晚上天气：{{day.wea_night}}</text>
+    <text>温度：{{day.tem1}}℃/{{day.tem2}}℃</text>
+</view>
+
+<view class='tianqi'>
+    <text>当天实时天气</text>
+    <template name="chet">
+        <view>
+            <text>{{hours}}</text>
+            <text>天气：{{wea}}</text>
+            <text>温度：{{tem}}℃</text>
+        </view>
+    </template>
+    <view>
+        <block wx:for="{{day.hours}}" wx:key='this.index'>
+            <template  is="chet" data="{{...item}}">
+                
+            </template>
+        </block>
+    </view>
+</view>
+
+
+<view class='qitian'>
+    <text>各项指数</text>
+    <template name="qi">
+            <view>
+                    <text>{{title}}</text>
+                    <text>{{level}}</text>
+                    <text>{{desc}}</text>
+            </view>
+    </template>
+
+    <view>
+        <block wx:for="{{day.index}}" wx:key='this.index'>
+            <template is="qi" data="{{...item}}">
+
+            </template>
+        </block>
+    </view>
+</view>

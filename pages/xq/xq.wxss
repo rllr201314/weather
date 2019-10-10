@@ -1,0 +1,73 @@
+page{
+    background-color: #eaeff5;
+}
+.jinri{
+    width: 96%;
+    height: 300rpx;
+    margin: 30rpx auto;
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10rpx;
+    align-items: center;
+}
+.tianqi{
+    width: 96%;
+    height: 250rpx;
+    margin: 30rpx auto;
+    /* padding: 30rpx; */
+    background-color: #fff;
+    
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+}
+.tianqi text{
+    padding: 0 30rpx;
+}
+.tianqi view{
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 200rpx;
+    margin-top: 20rpx;
+}
+.tianqi view view{
+    display: flex;
+    flex-direction: column;
+    width: 33.333%;
+    align-items: center;
+}
+
+.qitian{
+    width: 96%;
+    height: 300rpx;
+    margin: 30rpx auto;
+    /* padding: 30rpx; */
+    background-color: #fff;
+    
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+}
+.qitian text{
+    padding: 0 30rpx;
+}
+.qitian view{
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 200rpx;
+    margin-top: 20rpx;
+}
+.qitian view view{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}

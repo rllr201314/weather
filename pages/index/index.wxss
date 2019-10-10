@@ -1,0 +1,116 @@
+/* pages/index/index.wxss */
+page{
+    background-color: #eaeff5;
+}
+.top{
+    width: 96%;
+    height: 300rpx;
+    margin: 30rpx auto;
+    
+    background-color: #fff;
+    display: flex;
+    border-radius: 10rpx;
+}
+.topl{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 30rpx;
+}
+.topr{
+    padding-top: 30rpx;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.somes{
+    width: 96%;
+    height: 200rpx;
+    margin: 30rpx auto;
+    background-color: #fff;
+    display: flex;
+    border-radius: 10rpx;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.somes view{
+    width: 33.333%;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tianqi{
+    width: 96%;
+    height: 250rpx;
+    margin: 30rpx auto;
+    /* padding: 30rpx; */
+    background-color: #fff;
+    
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+}
+.tianqi text{
+    padding: 0 30rpx;
+}
+.tianqi view{
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 200rpx;
+    margin-top: 20rpx;
+}
+.tianqi view view{
+    display: flex;
+    flex-direction: column;
+    width: 33.333%;
+    align-items: center;
+}
+.qitian{
+    width: 96%;
+    height: 350rpx;
+    margin: 30rpx auto;
+    /* padding: 30rpx; */
+    background-color: #fff;
+    
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+}
+.qitian text{
+    padding: 0 30rpx;
+}
+.qitian view{
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 200rpx;
+    margin-top: 20rpx;
+}
+.qitian view view{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200rpx;
+    align-items: center;
+}
+.emm{
+    width: 96%;
+    height: 100rpx;
+    margin: 30rpx auto;
+    /* padding: 30rpx; */
+    background-color: #fff;
+    text-align: center;
+    line-height: 100rpx;
+    border-radius: 10rpx;
+}
+.emm text{
+    font-size: 40rpx;
+}

@@ -1,0 +1,94 @@
+<view class='emm'>
+    <text>{{sheng}}</text>
+    <text>{{shi}}市</text>
+    <text>{{qu}}区</text>
+</view>
+
+<view class='top'>
+    <view class='topl'>
+        <text>{{obj.tem}}℃</text>
+        <text>{{obj.tem1}}℃/{{obj.tem2}}℃</text>
+        <text>{{obj.air_tips}}</text>
+    </view>
+    <view class='topr'>
+        <text>{{qu}}区</text>
+        <text>{{obj.wea}}</text>
+        <text>{{obj.date}}</text>
+        <text>{{obj.week}}</text>
+    </view>
+    
+</view>
+
+<view class='somes'>
+    <view>
+        <text>气象更新时间</text>
+        <text>{{obj.update_time}}</text>
+    </view>
+    <view>
+        <text>湿度</text>
+        <text>{{obj.humidity}}</text>
+    </view>
+    <view>
+        <text>空气质量</text>
+        <text>{{obj.air_pm25}}</text>
+    </view>
+    <view>
+        <text>风速</text>
+        <text>{{obj.win_speed}}</text>
+    </view>
+    <view>
+        <text>风向</text>
+        <text>{{obj.win}}</text>
+    </view>
+    <view>
+        <text>PM2.5</text>
+        <text>{{obj.air_pm25}}</text>
+    </view>
+    <view>
+        <text>气压hpa</text>
+        <text>{{obj.pressure}}</text>
+    </view>
+
+</view>
+
+<view class='tianqi'>
+    <text>当天实时天气</text>
+    <template name="chet">
+        <view bindtap="funcc" data-cp="{{win}}">
+            <text>{{hours}}</text>
+            <text>天气：{{wea}}</text>
+            <text>温度：{{tem}}℃</text>
+        </view>
+    </template>
+    <view>
+        <block wx:for="{{hour}}" wx:key='this.index'>
+            <template  is="chet" data="{{...item}}">
+                
+            </template>
+        </block>
+    </view>
+</view>
+
+<view class='qitian'>
+    <text>未来七天天气</text>
+    <template name="qi">
+            <view bindtap='funa' data-qt="{{date}}">
+                    <text>{{date}}</text>
+                    <text>{{wea}}</text>
+                    <text>最高温度：{{tem1}}℃</text>
+                    <text>最低温度：{{tem2}}℃</text>
+            </view>
+    </template>
+
+    <view>
+        <block wx:for="{{qitian}}" wx:key='this.index'>
+            <template is="qi" data="{{...item}}">
+
+            </template>
+        </block>
+    </view>
+</view>
+
+
+
+
